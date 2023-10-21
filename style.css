@@ -14,7 +14,6 @@ h1{
     margin: auto;
     display: flex;
     justify-content: space-between;
-    border: solid 1px black;
 }
 
 button {
