@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Proposal</title>
+  </head>
+  <body>
+    <h1>Vai Rolar cuzinho hoje?</h1>
+    <div class="button-container">
+      <a href="https://youtu.be/5J3EElD5TuI?si=6oMpNZFlk2gcfULG" target="_blank"><button>Yes</button></a>
+      <button id="no" onmouseover="Move()">No</button>
+    </div>
+    <p>Powered by RG</p>
+  </body>
+  <script>
+    var ramdomNumLeft;
+    var ramdomNumTop;
+
+    function Move() {
+      ramdomNumLeft = Math.floor(Math.random() * 300 + 1);
+      ramdomNumTop = Math.floor(Math.random() * 400 + 1);
+      ramdomNumBotton = Math.floor(Math.random() * 400 + 1);
+      ramdomNumRight = Math.floor(Math.random() * 400 + 1);
+
+      document.getElementById("no").style.position = "absolute";
+      document.getElementById("no").style.color = "yellow";
+      document.getElementById("no").style.marginTop = "" + ramdomNumLeft + "px";
+      document.getElementById("no").style.marginLeft = "" + ramdomNumTop + "px";
+      document.getElementById("no").style.marginBottom =
+        "" + ramdomNumBotton + "px";
+      document.getElementById("no").style.marginRight =
+        "" + ramdomNumRight + "px";
+      console.log(ramdomNumLeft);
+      console.log(ramdomNumTop);
+    }
+  </script>
+</html>
